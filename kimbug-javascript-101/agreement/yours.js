@@ -23,7 +23,7 @@ function toggleCheckbox(e) {
   if (!checked) {
     checkAll.checked = false;
   }
-  agreements[id] = checked;
+  agreements[id] = checked; // 해당 id를 가진 checkbox의 checked 속성(true/false)
   toggleSubmitButton();
 }
 
