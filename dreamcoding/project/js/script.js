@@ -148,7 +148,7 @@ showItem(array);
 
 menu.addEventListener('click', (e) => {
   const newArr = array.filter(elem =>
-    elem.category === e.target.className || elem.color === e.target.className);
+    elem.category === e.target.id || elem.color === e.target.id);
   itemList.innerHTML = '';
   showItem(newArr);
 });
