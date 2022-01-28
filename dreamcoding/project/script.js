@@ -1,7 +1,7 @@
 const menu = document.querySelector('.menu-group');
 const itemList = document.querySelector('.item-list');
 
-let array = [
+const array = [
   {
     img: 'img/blue_p.png',
     color: 'blue',
@@ -130,8 +130,8 @@ let array = [
   }
 ]
 
-function showItem() {
-  array.forEach((elem) => {
+function showItem(arr) {
+  arr.forEach((elem) => {
     const item = document.createElement('li');
     const itemImage = document.createElement('img');
     const itemDesc = document.createElement('span');
@@ -144,13 +144,11 @@ function showItem() {
     item.appendChild(itemDesc);
   })
 }
-showItem();
+showItem(array);
 
 menu.addEventListener('click', (e) => {
-  array = array.filter(elem =>
+  const newArr = array.filter(elem =>
     elem.category === e.target.className || elem.color === e.target.className);
-  showItem();
+  itemList.innerHTML = '';
+  showItem(newArr);
 });
-
-// 리스트들 삭제하는거
-// 두번 안됨 -> 왜냐면 필터함수가 삭제해버려서...
