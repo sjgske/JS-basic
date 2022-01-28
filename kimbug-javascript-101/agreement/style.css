@@ -36,13 +36,10 @@ button:active {
 }
 
 .title {
-  width: 100px;
   margin-bottom: 24px;
-}
-
-.title img {
-  width: 100%;
-  height: auto;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-size: 28px;
 }
 
 .signup-form {
