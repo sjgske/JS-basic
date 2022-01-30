@@ -132,16 +132,16 @@ const array = [
 
 function showItem(arr) {
   arr.forEach((elem) => {
-    const item = document.createElement('li');
-    const itemImage = document.createElement('img');
-    const itemDesc = document.createElement('span');
+    const li = document.createElement('li');
+    const img = document.createElement('img');
+    const span = document.createElement('span');
 
-    itemImage.src = elem.img;
-    itemDesc.textContent = `${elem.gender}, ${elem.size}`;
+    img.src = elem.img;
+    span.textContent = `${elem.gender}, ${elem.size}`;
 
-    itemList.appendChild(item);
-    item.appendChild(itemImage);
-    item.appendChild(itemDesc);
+    itemList.appendChild(li);
+    li.appendChild(img);
+    li.appendChild(span);
   })
 }
 showItem(array);

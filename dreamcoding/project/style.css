@@ -118,6 +118,6 @@ ul {
   margin-right: 15px;
 }
 
-.invisible {
+li.item.invisible {
   display: none;
 }
