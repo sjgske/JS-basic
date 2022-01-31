@@ -32,7 +32,6 @@ function displayCatInfo(catString) {
     }
   }
 
-
   // Don't edit the code below here!
 
   para1.textContent = motherInfo;
