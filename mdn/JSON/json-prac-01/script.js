@@ -36,7 +36,7 @@ function populateHeader(jsonObj) {
   header.appendChild(myPara);
 }
 
-// Sectioin 조작하기 - 히어로 정보 카드 만들기
+// Section 조작하기 - 히어로 정보 카드 만들기
 function showHeroes(jsonObj) {
   const heroes = jsonObj['members'];
 
