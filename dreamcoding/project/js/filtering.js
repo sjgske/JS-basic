@@ -30,15 +30,7 @@ function onButtonClick(event, items) {
   if (key == null || value == null) {
     return;
   }
-  updateItems(items, key, value);
-}
-
-function updateItems(items, key, value) {
-  items.forEach(item => {
-    if (item[key] === value) {
-      console.dir(item)
-    }
-  })
+  displayItems(items.filter(item => item[key] === value));
 }
 
 function setEventListeners(items) {

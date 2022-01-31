@@ -49,9 +49,12 @@ function updateItems(items, key, value) {
   });
 }
 
+const logo = document.querySelector('.header-logo img');
+logo.addEventListener('click', () => location.reload());
+
+// main
 loadItems().then(items => {
-  // li를 리턴하는 함수로 mapping한 new array
-  const elements = items.map(createElement);
+  const elements = items.map(createElement); // li를 리턴하는 함수로 mapping한 new array
   const container = document.querySelector('.item-list');
   container.append(...elements);
   const buttons = document.querySelector('.menu-group');

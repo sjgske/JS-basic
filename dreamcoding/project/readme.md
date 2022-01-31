@@ -1,19 +1,25 @@
 # Mini Shopping Mall
-💎 프로젝트 디자인, 리소스 : [드림코딩](https://www.youtube.com/watch?v=We2Kv1HMGvc&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=21)
-
 ### 🌎 Website.
 https://sjgske.github.io/TIL/dreamcoding/project/index.html
 
-<img src="img/gif.gif" width="300" height="360">
-
 ### 💝 feature.
-- JSON
-- promise
-- map, join
-- filter
-- event delegation
+- 아이템 스크롤
+- 동적으로 데이터 받아오기
+- 버튼 filtering 기능
+  - classList
+  - filter
+- 버튼 마우스 오버 시 transition
+- 로고 아이콘 클릭 시 새로고침 / 전체 데이터 보여주기
 
 ### 📚 Stack.
+- JSON
+- promise
+- event delegation
 
-- HTML/CSS
-- JavaScript
+### 💻 Screenshot.
+<img src="https://user-images.githubusercontent.com/91328528/151823117-21598688-5f1e-4546-b9e6-eba47d0f8d27.png" width="300"></img>
+
+
+### 💎 Ref.
+
+프로젝트 리소스 : [드림코딩](https://www.youtube.com/watch?v=We2Kv1HMGvc&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=21)
