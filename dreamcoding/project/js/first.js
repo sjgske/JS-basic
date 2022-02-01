@@ -1,134 +1,37 @@
 const menu = document.querySelector('.menu-group');
 const itemList = document.querySelector('.item-list');
 
-const array = [
-  {
-    img: 'img/blue_p.png',
-    color: 'blue',
-    category: 'pants',
-    gender: 'male',
-    size: 'small'
-  },
-  {
-    img: 'img/blue_p.png',
-    color: 'blue',
-    category: 'pants',
-    gender: 'male',
-    size: 'small'
-  },
-  {
-    img: 'img/blue_s.png',
-    color: 'blue',
-    category: 'skirt',
-    gender: 'female',
-    size: 'medium'
-  },
-  {
-    img: 'img/blue_s.png',
-    color: 'blue',
-    category: 'skirt',
-    gender: 'female',
-    size: 'medium'
-  },
-  {
-    img: 'img/blue_t.png',
-    color: 'blue',
-    category: 'tshirt',
-    gender: 'male',
-    size: 'large'
-  },
-  {
-    img: 'img/blue_t.png',
-    color: 'blue',
-    category: 'tshirt',
-    gender: 'male',
-    size: 'large'
-  },
-  {
-    img: 'img/pink_p.png',
-    color: 'pink',
-    category: 'pants',
-    gender: 'male',
-    size: 'large'
-  },
-  {
-    img: 'img/pink_p.png',
-    color: 'pink',
-    category: 'pants',
-    gender: 'male',
-    size: 'large'
-  },
-  {
-    img: 'img/pink_s.png',
-    color: 'pink',
-    category: 'skirt',
-    gender: 'female',
-    size: 'medium'
-  },
-  {
-    img: 'img/pink_s.png',
-    color: 'pink',
-    category: 'skirt',
-    gender: 'female',
-    size: 'medium'
-  },
-  {
-    img: 'img/pink_t.png',
-    color: 'pink',
-    category: 'tshirt',
-    gender: 'female',
-    size: 'small'
-  },
-  {
-    img: 'img/pink_t.png',
-    color: 'pink',
-    category: 'tshirt',
-    gender: 'female',
-    size: 'small'
-  },
-  {
-    img: 'img/yellow_p.png',
-    color: 'yellow',
-    category: 'pants',
-    gender: 'male',
-    size: 'small'
-  },
-  {
-    img: 'img/yellow_p.png',
-    color: 'yellow',
-    category: 'pants',
-    gender: 'male',
-    size: 'small'
-  },
-  {
-    img: 'img/yellow_s.png',
-    color: 'yellow',
-    category: 'skirt',
-    gender: 'female',
-    size: 'medium'
-  },
-  {
-    img: 'img/yellow_s.png',
-    color: 'yellow',
-    category: 'skirt',
-    gender: 'female',
-    size: 'medium'
-  },
-  {
-    img: 'img/yellow_t.png',
-    color: 'yellow',
-    category: 'tshirt',
-    gender: 'male',
-    size: 'large'
-  },
-  {
-    img: 'img/yellow_t.png',
-    color: 'yellow',
-    category: 'tshirt',
-    gender: 'male',
-    size: 'large'
+class Items {
+  constructor(img, color, type, gender, size) {
+    this.img = img;
+    this.color = color;
+    this.type = type;
+    this.gender = gender;
+    this.size = size;
   }
-]
+}
+
+const array = [
+  new Items('img/blue_p.png', 'blue', 'pants', 'male', 'small'),
+  new Items('img/blue_p.png', 'blue', 'pants', 'male', 'small'),
+  new Items('img/blue_s.png', 'blue', 'skirt', 'female', 'medium'),
+  new Items('img/blue_s.png', 'blue', 'skirt', 'female', 'medium'),
+  new Items('img/blue_t.png', 'blue', 'tshirt', 'male', 'large'),
+  new Items('img/blue_t.png', 'blue', 'tshirt', 'male', 'large'),
+  new Items('img/pink_p.png', 'pink', 'pants', 'male', 'large'),
+  new Items('img/pink_p.png', 'pink', 'pants', 'male', 'large'),
+  new Items('img/pink_s.png', 'pink', 'skirt', 'female', 'medium'),
+  new Items('img/pink_s.png', 'pink', 'skirt', 'female', 'medium'),
+  new Items('img/pink_t.png', 'pink', 'tshirt', 'female', 'small'),
+  new Items('img/pink_t.png', 'pink', 'tshirt', 'female', 'small'),
+  new Items('img/yellow_p.png', 'yellow', 'pants', 'male', 'small'),
+  new Items('img/yellow_p.png', 'yellow', 'pants', 'male', 'small'),
+  new Items('img/yellow_s.png', 'yellow', 'skirt', 'female', 'medium'),
+  new Items('img/yellow_s.png', 'yellow', 'skirt', 'female', 'medium'),
+  new Items('img/yellow_t.png', 'yellow', 'tshirt', 'male', 'large'),
+  new Items('img/yellow_t.png', 'yellow', 'tshirt', 'male', 'large')
+];
+
 
 function showItem(arr) {
   arr.forEach((elem) => {
@@ -146,9 +49,11 @@ function showItem(arr) {
 }
 showItem(array);
 
+
+
 menu.addEventListener('click', (e) => {
   const newArr = array.filter(elem =>
-    elem.category === e.target.id || elem.color === e.target.id);
+    elem.type === e.target.id || elem.color === e.target.id);
   itemList.innerHTML = '';
   showItem(newArr);
 });
