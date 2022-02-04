@@ -1,3 +1,4 @@
+const logo = document.querySelector('.header-logo img');
 const menu = document.querySelector('.menu-group');
 const itemList = document.querySelector('.item-list');
 
@@ -47,11 +48,11 @@ function showItem(arr) {
     li.appendChild(span);
   })
 }
-showItem(array);
 
+window.onload = showItem(array);
+logo.addEventListener('click', showItem(array));
 
-
-menu.addEventListener('click', (e) => {
+menu.addEventListener('click', e => {
   const newArr = array.filter(elem =>
     elem.type === e.target.id || elem.color === e.target.id);
   itemList.innerHTML = '';
