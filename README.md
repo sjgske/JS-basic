@@ -1,4 +1,4 @@
-# JS-basic
+# JS Mini Projects
 Vanilla JavaScript 미니 프로젝트 모음
 
 ### Mini shoppingmall app
