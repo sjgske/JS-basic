@@ -2,7 +2,6 @@ const btns = document.querySelectorAll(".tab-button");
 const contents = document.querySelectorAll(".tab-content");
 
 function tabMenu(e, tabId) {
-  console.log(tabId);
   let activeTab = document.getElementById(tabId);
 
   btns.forEach((el) => el.classList.remove("active"));
