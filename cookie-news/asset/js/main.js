@@ -1,4 +1,6 @@
 import { setIsLoading } from "./loading.js";
+import "../css/style.css";
+import "../img/spinner.gif";
 
 function createArticle({ title, summary, thumb }) {
   const article = document.createElement("article");
@@ -20,7 +22,7 @@ function renderNews() {
   setIsLoading(true);
 
   setTimeout(() => {
-    fetch("./data/news.json")
+    fetch("../data/news.json")
       .then((res) => res.json())
       .then((data) => {
         const { articles } = data;
