@@ -1,7 +1,7 @@
 ## 🥨바닐라js 미니 프로젝트 모음
 
-#### [🔗Mini shoppingmall app](https://sjgske.github.io/js-mini-projects/mini-shoppingmall-app)
-- fetch data, filter practice
+#### [🔗Mini shoppingmall](https://sjgske.github.io/js-mini-projects/mini-shoppingmall-app)
+- fetch data, filter
 
 #### [🔗Agreements](https://sjgske.github.io/js-mini-projects/agreements)
 - optional checkbox handling
