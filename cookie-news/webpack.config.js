@@ -25,6 +25,19 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.js$/,
+        include: [path.resolve(__dirname, "asset/js")],
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: [
+              ["@babel/preset-env", { useBuiltIns: "usage", corejs: 3 }],
+            ],
+          },
+        },
+      },
     ],
   },
   plugins: [new HTMLWebpackPlugin({ template: "index.html" })],

@@ -1,3 +1,4 @@
+import { fetch } from "whatwg-fetch";
 import { setIsLoading } from "./loading.js";
 import "../css/style.css";
 import "../img/spinner.gif";
