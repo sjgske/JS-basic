@@ -9,6 +9,6 @@
 #### [🔗Dropdown form](https://sjgske.github.io/js-mini-projects/form)
 - dropdown animation
 
-#### [🔗Cookie news](https://sjgske.github.io/js-mini-projects/cookie-news)
+#### [🔗Cookie news](https://sjgske.github.io/js-mini-projects/cookie-news/dist)
 - webpack, babel
 - flexbox layout
